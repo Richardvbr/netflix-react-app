@@ -31,7 +31,7 @@ function Banner() {
   If > n, then render original string */
   const truncateText = (string, n) => {
     return string?.length > n
-      ? string.substr(0, n - 1) + " ..."
+      ? string.substr(0, n - 1) + "..."
       : string;
   }
 
@@ -45,14 +45,14 @@ function Banner() {
 
       {/* Banner content */}
       <div className="banner__contents">
-        <h1 className="banner__title">{movie.name}</h1>
+        <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
         <div className="banner__buttons">
           <button className='banner__button'><FontAwesomeIcon icon={faPlay} className='button-icon' />Play</button>
           <button className='banner__button'><FontAwesomeIcon icon={faPlus} className='button-icon' />My List</button>
         </div>
         <h1 className="banner__description">
           {/* Truncate text function with a 150 character limit */}
-          {truncateText(`${movie.overview}`, 150)}
+          {truncateText(`${movie?.overview}`, 150)}
         </h1>
       </div>
 
