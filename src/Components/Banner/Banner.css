@@ -6,30 +6,34 @@
 }
 
 .banner--fadeBottom {
-  height: 29rem;
+  height: 25rem;
   background-image: linear-gradient(180deg, transparent, rgba(19, 19, 19, 0.75), rgb(0, 0, 0));
 }
 
 .banner__contents {
   margin-left: 50px;
-  padding-top: 200px;
+  padding-top: 250px;
   height: 190px;
 }
 
 .banner__title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .banner__description {
   width: 45em;
   line-height: 1.3;
   margin-top: 1.1rem;
-  font-size: 1rem;
+  font-size: 17px;
   max-width: 375px;
   height: 80px;
   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
 }
 
 .banner__button {

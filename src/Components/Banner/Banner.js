@@ -47,7 +47,7 @@ function Banner() {
       <div className="banner__contents">
         <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
         <div className="banner__buttons">
-          <button className='banner__button'><FontAwesomeIcon icon={faPlay} className='button-icon' />Play</button>
+          <a target="_blank" rel='noopener noreferrer' href={`https://youtube.com/results?search_query=${movie.title || movie.name || movie.original_name} trailer`}><button className='banner__button'><FontAwesomeIcon icon={faPlay} className='button-icon' />Play</button></a>
           <button className='banner__button'><FontAwesomeIcon icon={faPlus} className='button-icon' />My List</button>
         </div>
         <h1 className="banner__description">

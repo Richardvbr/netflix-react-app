@@ -17,6 +17,7 @@ function HomeScreen() {
       {/* Rows */}\
       <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={requests.fetchAction} />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedy} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorror} />

@@ -17,8 +17,9 @@
 .env.development.local
 .env.test.local
 .env.production.local
-ui.png
-url.txt
+network_ids.json
+Firebase.js
+
 
 npm-debug.log*
 yarn-debug.log*
