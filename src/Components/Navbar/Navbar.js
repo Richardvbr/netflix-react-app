@@ -24,12 +24,13 @@ function Navbar() {
 
   return (
     // Only applies 'nav__black' class after scrolling > 100px
-    <div className={`navbar ${show && 'nav__black'}`}>
+    <nav className={`navbar ${show && 'nav__black'}`}>
       <div className='navbar__content'>
+        {/* ADD REST OF NAVBAR */}
         <img className='navbar__logo' src={logo} alt="navbar logo" />
         <img className='navbar__avatar' src={avatar} alt="navbar avatar" />
       </div>
-    </div>
+    </nav>
   )
 }
 

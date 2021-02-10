@@ -14,17 +14,17 @@
   display: none;
 }
 
-.row__title {
-
-}
-
 .row__poster {
-  max-width: 250px;
+  max-width: 200px;
   margin-right: 15px;
   transition: all 0.2s;
   object-fit: contain;
   margin-bottom: 10px;
   position: relative;
+}
+
+.row__posterLarge {
+  max-width: 250px;
 }
 
 .row__poster:hover {
@@ -34,9 +34,17 @@
   opacity: 1;
 }
 
-.movie__title {
-  font-size: 14px;
+/* currently hidden because posters already show the name */
+/* .movie__title {
+  font-size: 13px;
   font-weight: 600;
-  /* text-align: center; */
   color:#f7f7f7;
+  opacity: 0.8;
+  text-align: center;
+} */
+
+@media only screen and (max-width: 600px) {
+  .row__poster {
+    max-width: 200px;
+  }
 }

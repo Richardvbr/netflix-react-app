@@ -23,7 +23,6 @@
 }
 
 .banner__description {
-  width: 45em;
   line-height: 1.3;
   margin-top: 1.1rem;
   font-size: 17px;
@@ -59,4 +58,34 @@ a {
 .banner__button:hover {
   color: #000;
   background-color: #e6e6e6;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .banner__contents {
+    padding-top: 350px;
+    height: 150px;
+  }
+
+  .banner--fadeBottom {
+    height: 18.75rem;
+    background-image: linear-gradient(180deg, transparent, rgba(19, 19, 19, 0.75), rgb(0, 0, 0));
+  }
+
+  .banner__title {
+    font-size: 2.5rem;
+  }
+
+  .banner__description {
+    font-size: 15px;
+    max-width: 35ch;
+  }
+
+  .banner__button {
+    padding: 0.5rem 1.5rem;
+  }
 }

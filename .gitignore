@@ -18,7 +18,8 @@
 .env.test.local
 .env.production.local
 network_ids.json
-Firebase.js
+firebase.js
+notes.txt
 
 
 npm-debug.log*
