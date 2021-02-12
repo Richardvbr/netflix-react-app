@@ -20,6 +20,28 @@ function ProfileScreen() {
             <h3>Your email address</h3>
             <h2>{`${user.email || 'Logged in as guest'}`}</h2>
             <div className="profileScreen__plans">
+              <h3>Plans</h3>
+              <div className="profileScreen__standard plan">
+                <div className="plan__details">
+                  <h4>Netflix Standard</h4>
+                  <p>1080p</p>
+                </div>
+                <button>Subscribe</button>
+              </div>
+              <div className="profileScreen__basic plan">
+                <div className="plan__details">
+                  <h4>Netflix Basic</h4>
+                  <p>720p</p>
+                </div>
+                <button>Subscribe</button>
+              </div>
+              <div className="profileScreen__premium plan">
+                <div className="plan__details">
+                  <h4>Netflix Premium</h4>
+                  <p>4K+HDR</p>
+                </div>
+                <button>Subscribe</button>
+              </div>
               <button onClick={() => auth.signOut()} className='profileScreen__signOut'>Sign Out</button>
             </div>
           </div>

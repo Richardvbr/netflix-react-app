@@ -3,9 +3,11 @@ import './LoginScreen.css'
 import logo from '../../img/logo.png'
 import SignUpScreen from '../SignUpScreen/SignUpScreen';
 import { auth } from '../../firebase';
+import { useHistory } from 'react-router-dom';
 
 function LoginScreen() {
   const [signIn, setSignin] = useState(false);
+  const history = useHistory();
 
   // Sign in as guest
   const guestSignIn = (e) => {
@@ -24,7 +26,7 @@ function LoginScreen() {
   return (
     <div className='loginScreen'>
       <div className="loginScreen__background">
-        <img className
+        <img onClick={() => history.push('/')} className
           ='loginScreen__logo' src={logo} alt="netflix logo" />
         <button onClick={() => setSignin(true)} className='loginScreen__button'>Sign In</button>
         <div className="loginScreen__gradient" />

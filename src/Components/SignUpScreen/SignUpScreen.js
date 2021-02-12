@@ -23,6 +23,20 @@ function SignUpScreen() {
       });
   };
 
+  // Sign in as guest
+  const guestSignIn = (e) => {
+    e.preventDefault();
+    auth
+      .signInAnonymously()
+      .then((authUser) => {
+        console.log('Logged in as guest')
+        // console.log(authUser);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
   // Logs in with entered email and password
   const signIn = (e) => {
     e.preventDefault();
@@ -48,9 +62,10 @@ function SignUpScreen() {
         <input ref={passwordRef} type='password' placeholder='Password' />
         <button type='submit' onClick={signIn}>Sign In</button>
         <h4><span className='signupScreen__gray'>New to Netflix?</span> <span className='signupScreen__link' onClick={register}>Sign up now.</span></h4>
+        <button type='submit' onClick={guestSignIn} className='loginScreen__guestLogin' >Or continue as guest</button>
       </form>
     </div>
   )
 }
 
-export default SignUpScreen
+export default SignUpScreen;
