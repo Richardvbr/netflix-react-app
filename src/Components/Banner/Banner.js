@@ -53,7 +53,7 @@ function Banner() {
         </div>
         <h1 className="banner__description">
           {/* Truncate text function with a 150 character limit */}
-          {truncateText(`${movie?.overview}`, 150)}
+          {truncateText(`${movie?.overview}`, 175)}
         </h1>
       </div>
 

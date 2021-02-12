@@ -1,13 +1,13 @@
 .row {
   color: #f7f7f7;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .scroll-container {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -44,6 +44,10 @@
 } */
 
 @media only screen and (max-width: 600px) {
+  .row {
+    margin-left: 20px;
+  }
+
   .row__poster {
     max-width: 200px;
   }

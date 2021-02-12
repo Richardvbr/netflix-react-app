@@ -2,10 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './Row.css'
 import axios from '../../Axios'
 import ScrollContainer from 'react-indiana-drag-scroll'
-import movieTrailer from 'movie-trailer'
-import YouTube from 'react-youtube';
-// const movie = 'Up';
-// movieTrailer(null, { tmdbId: movie.id }).then(console.log)
 
 function Row({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
