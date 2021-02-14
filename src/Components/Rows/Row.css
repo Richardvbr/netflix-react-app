@@ -34,21 +34,12 @@
   opacity: 1;
 }
 
-/* currently hidden because posters already show the name */
-/* .movie__title {
-  font-size: 13px;
-  font-weight: 600;
-  color:#f7f7f7;
-  opacity: 0.8;
-  text-align: center;
-} */
-
 @media only screen and (max-width: 600px) {
   .row {
     margin-left: 20px;
   }
 
   .row__poster {
-    max-width: 200px;
+    max-width: 150px;
   }
 }

@@ -1,6 +1,7 @@
 .profileScreen {
   height: 100vh;
   color: white;
+  background-color: #111;
 }
 
 .profileScreen__body {
@@ -102,6 +103,10 @@
 
 
 @media screen and (max-width: 600px) {
+  .profileScreen {
+    height: 100%;
+  }
+
   .plan {
     flex-direction: column;
   }
@@ -134,5 +139,9 @@
     border-bottom: 1px solid #282c2d;
     margin-bottom: 20px;
     margin-top: 50px;
+  }
+
+  .profileScreen__signOut {
+    margin-bottom: 10%;
   }
 }

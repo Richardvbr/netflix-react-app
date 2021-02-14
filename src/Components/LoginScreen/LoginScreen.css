@@ -108,3 +108,49 @@
   background-color: #e50914;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .loginScreen__body {
+    top: 15%;
+    padding: 15px;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    max-width: 30ch;
+  }
+
+  .loginScreen__body > h2 {
+    font-size: 1.25rem;
+  }
+
+  .loginScreen__body > h3 {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  .loginScreen__input > form > input {
+    padding: 10px;
+    height: 45px;
+    width: 90%;
+    font-size: 18px;
+  }
+  
+  .loginScreen__getStarted {
+    display: block;
+    width: 40%; 
+    max-width: 40%;
+    margin: 20px auto;
+    padding: 13px 20px;
+  }
+  
+  .loginScreen__guestLogin {
+    padding: 13px 20px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1500px) {
+  .loginScreen__body {
+    top: 20%;
+  }
+}

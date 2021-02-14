@@ -36,3 +36,19 @@
   height: 50px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar  {
+    padding: 30px;
+  }
+
+  .navbar__logo {
+    max-width: 85px;
+  }
+
+  .navbar__avatar {
+    height: 35px;
+    width: 35px;
+  }
+
+}
