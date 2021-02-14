@@ -1,10 +1,19 @@
+.fade-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 7rem;
+  background-image: linear-gradient(0deg, transparent, rgba(19, 19, 19, 0.75), rgb(10, 10, 10))
+}
+
 .navbar  {
   position: fixed;
   top: 0;
   width: 100%;
   padding: 40px;
   z-index: 5;
-
   transition-timing-function: ease-in;
   transition: all 0.5s;
 }
@@ -15,6 +24,61 @@
   align-items: center;
 }
 
+.navbar__left {
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__left__ul {
+  display: flex;
+  color: white;
+  list-style: none;
+  position: fixed;
+  top: 23px;
+  left: 12rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__left__ul > a {
+  color: white;
+  opacity: 0.8;
+  margin: 0.5rem .75rem;
+}
+
+.navbar__left__ul > a:hover {
+  opacity: 1;
+}
+
+.navbar__right__ul {
+  display: flex;
+  color: white;
+  list-style: none;
+  position: fixed;
+  top: 23px;
+  right: 8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__right__ul > a {
+  color: white;
+  opacity: 0.8;
+  margin: 0.5rem .75rem;
+}
+
+.navbar__right__ul > a:hover {
+  opacity: 1;
+}
+
+.searchIcon {
+  font-size: 20px;
+}
+
+.bellIcon {
+  font-size: 20px;
+}
+
 .nav__black {
   background-color: #111;
 }
@@ -22,7 +86,7 @@
 .navbar__logo {
   position: fixed;
   top: 23px;
-  left: 20px;
+  left: 50px;
   max-width: 110px;
   object-fit: contain;
   cursor: pointer;
@@ -31,24 +95,39 @@
 .navbar__avatar {
   position: fixed;
   top: 12px;
-  right: 20px;
+  right: 50px;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .fade-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 5rem;
+    background-image: linear-gradient(0deg, transparent, rgba(19, 19, 19, 0.75), rgb(10, 10, 10))
+  }
+
   .navbar  {
     padding: 30px;
   }
 
+  .hide-mobile {
+    display: none;
+  }
+
   .navbar__logo {
     max-width: 85px;
+    left: 20px;
   }
 
   .navbar__avatar {
     height: 35px;
     width: 35px;
+    right: 20px;
   }
-
 }
