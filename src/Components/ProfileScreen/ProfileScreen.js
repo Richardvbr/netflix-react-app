@@ -19,6 +19,7 @@ function ProfileScreen() {
           <div className="profileScreen__details">
             <h3>Your email address</h3>
             <h2>{`${user.email || 'Logged in as guest'}`}</h2>
+            <button onClick={() => auth.signOut()} className='profileScreen__signOut'>Sign Out</button>
             <div className="profileScreen__plans">
               <h3>Plans</h3>
               <div className="profileScreen__standard plan">
@@ -42,7 +43,6 @@ function ProfileScreen() {
                 </div>
                 <button>Subscribe</button>
               </div>
-              <button onClick={() => auth.signOut()} className='profileScreen__signOut'>Sign Out</button>
             </div>
           </div>
         </div>

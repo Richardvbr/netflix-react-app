@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   // Setup state for toggling navbar
@@ -61,9 +62,10 @@ function Navbar() {
             <a href="#">
               <li className="navbar__right__ul__li hide-mobile">DVD</li>
             </a>
-            <a href=""><FontAwesomeIcon className='bellIcon hide-mobile' icon={faBell} /></a>
+            <a href="#"><FontAwesomeIcon className='bellIcon hide-mobile' icon={faBell} /></a>
           </div>
           <img onClick={() => history.push('/profile')} className='navbar__avatar' src={avatar} alt="navbar avatar" />
+          <a href="#"><FontAwesomeIcon className='caretDown hide-mobile' icon={faCaretDown} /></a>
         </div>
       </div>
     </nav>

@@ -56,7 +56,7 @@
   list-style: none;
   position: fixed;
   top: 23px;
-  right: 8rem;
+  right: 7rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -77,6 +77,19 @@
 
 .bellIcon {
   font-size: 20px;
+}
+
+.caretDown {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  opacity: 0.8;
+  right: 25px;
+}
+
+.caretDown:hover {
+  opacity: 1;
 }
 
 .nav__black {
