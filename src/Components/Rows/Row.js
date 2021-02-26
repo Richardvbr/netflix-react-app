@@ -6,7 +6,8 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 function Row({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
   // 'w342' downloads the images at a maximum width of 342 pixels
-  const baseUrl = 'https://image.tmdb.org/t/p/w342/';
+  // correct path to corresponding image is added on line 39
+  const baseUrl = 'https://image.tmdb.org/t/p/w342';
 
   // Get movie information (title and poster)
   useEffect(() => {
@@ -34,6 +35,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
                 <img
                   className={`row__poster ${isLargeRow && 'row__posterLarge'}`}
                   key={movie.id}
+                  // Takes the baseUrl and (after fetchUrl) appends the correct path to download corresponding image
                   src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.poster_path}`}
                   alt={`${movie.title || movie.name || movie.original_name} poster`}
                 />

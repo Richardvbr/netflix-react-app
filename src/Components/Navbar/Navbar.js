@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../img/logo.png'
 import avatar from '../../img/avatar.png'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
@@ -48,9 +48,9 @@ function Navbar() {
             <a href="#">
               <li className="navbar__left__ul__li hide-mobile">Recently Added</li>
             </a>
-            <a href="#">
+            <Link href="">
               <li className="navbar__left__ul__li hide-mobile">My List</li>
-            </a>
+            </Link>
           </ul>
         </div>
         <div className="navbar__right">

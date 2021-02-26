@@ -33,17 +33,17 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {!user ? (
-          <LoginScreen />
+        {user ? (
+          <Switch>
+            <Route path="/profile" exact>
+              <ProfileScreen />
+            </Route>
+            <Route path="/" exact>
+              <HomeScreen />
+            </Route>
+          </Switch>
         ) : (
-            <Switch>
-              <Route path="/profile">
-                <ProfileScreen />
-              </Route>
-              <Route path="/" exact>
-                <HomeScreen />
-              </Route>
-            </Switch>
+            <LoginScreen />
           )}
       </Router >
     </div >
