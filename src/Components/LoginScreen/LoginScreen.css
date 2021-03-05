@@ -10,7 +10,7 @@
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 30%;
+  top: 25%;
   left: 0;
   right: 0;
   text-align: center;
@@ -152,6 +152,6 @@
 
 @media screen and (min-width: 601px) and (max-width: 1500px) {
   .loginScreen__body {
-    top: 20%;
+    top: 17%;
   }
 }
